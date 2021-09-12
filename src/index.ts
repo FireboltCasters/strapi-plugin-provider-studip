@@ -1,6 +1,6 @@
 /* istanbul ignore file */
-import StudipGrantConfig from "./StudipGrantConfig";
-import StudipProvider from "./StudipProvider";
+import StudipGrantConfig from './StudipGrantConfig';
+import StudipProvider from './StudipProvider';
 
-export { StudipGrantConfig };
-export { StudipProvider };
+export {StudipGrantConfig};
+export {StudipProvider};
