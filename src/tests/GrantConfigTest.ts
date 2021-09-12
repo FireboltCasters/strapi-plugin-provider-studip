@@ -37,11 +37,11 @@ test('Config Test missing provider', async () => {
 });
 
 test('Config Test default icon', async () => {
-  // @ts-ignore
   let config = StudipGrantConfig.getGrantConfig(
     enabled,
     fakeStapi,
     provider,
+      // @ts-ignore
     null
   );
 
