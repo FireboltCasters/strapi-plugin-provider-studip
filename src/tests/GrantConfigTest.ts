@@ -20,11 +20,9 @@ test('Config Test', async () => {
   );
 
   expect(config).toBeTruthy();
-  const providerConfig = config[provider];
-  expect(providerConfig).toBeTruthy();
-  expect(providerConfig.enabled).toBe(enabled);
-  expect(providerConfig.icon).toBe(icon);
-  expect(providerConfig.callback).toBeTruthy();
+  expect(config.enabled).toBe(enabled);
+  expect(config.icon).toBe(icon);
+  expect(config.callback).toBeTruthy();
 });
 
 test('Config Test missing provider', async () => {
@@ -32,8 +30,6 @@ test('Config Test missing provider', async () => {
   let config = StudipGrantConfig.getGrantConfig(enabled, fakeStapi, null, icon);
 
   expect(config).toBeTruthy();
-  const providerConfig = config[StudipGrantConfig.DEFAULT_PROVIDER_NAME];
-  expect(providerConfig).toBeTruthy();
 });
 
 test('Config Test default icon', async () => {
@@ -46,7 +42,5 @@ test('Config Test default icon', async () => {
   );
 
   expect(config).toBeTruthy();
-  const providerConfig = config[provider];
-  expect(providerConfig).toBeTruthy();
-  expect(providerConfig.icon).toBe(StudipGrantConfig.DEFAULT_ICON);
+  expect(config.icon).toBe(StudipGrantConfig.DEFAULT_ICON);
 });

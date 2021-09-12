@@ -13,14 +13,12 @@ export default class StudipGrantConfig {
     }
 
     return {
-      [provider]: {
         enabled: enabled,
         icon: icon || StudipGrantConfig.DEFAULT_ICON,
         key: '',
         secret: '',
         callback: `${strapi.config.server.url}/auth/` + provider + `/callback`,
         scope: ['username', 'password'],
-      },
     };
   }
 }
