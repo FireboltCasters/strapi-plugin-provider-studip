@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-provider-studip",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A plugin for Strapi to login with your Stud.IP credentials",
   "main": "index.js",
   "types": "index.d.ts",
