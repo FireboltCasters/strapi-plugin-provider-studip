@@ -41,7 +41,7 @@ test('Config Test default icon', async () => {
     enabled,
     fakeStapi,
     provider,
-      // @ts-ignore
+    // @ts-ignore
     null
   );
 
